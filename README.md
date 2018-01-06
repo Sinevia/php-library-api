@@ -21,7 +21,7 @@ Add the following to your composer file:
 
 ## Usage ##
 
-The lines bellow create an API service, which serves commands mapped to middleware and class methods:
+1. The lines bellow create an API service, which serves commands mapped to middleware and class methods:
 
 ```php
 $commands = [
@@ -38,7 +38,11 @@ $commands = [
 $api = new Sinevia\ApiService;
 $api->addCommands($commands);
 die($api->run());
+```
 
+2. Example controller with response:
+
+```php
 class PingController{
     function ping(){
         return (new Sinevia\ApiResponse)->success('pong');
