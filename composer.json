@@ -4,7 +4,7 @@
     "type": "library",
     "keywords": ["api", "library", "php", "sinevia"],    
     "homepage": "http://github.com/sinevia/php-library-api",
-    "license": "commercial",
+    "license": "proprietary",
     "authors": [
         {
             "name": "Milan Lesichkov",
