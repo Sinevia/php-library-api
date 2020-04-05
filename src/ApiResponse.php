@@ -63,6 +63,25 @@ class ApiResponse {
         return $this;
     }
 
+    function toArray() {
+        $array = [];
+
+        if ($this->id != null) {
+            $array['id'] = $this->id;
+        }
+        if ($this->status !== null) {
+            $array['status'] = $this->status;
+        }
+        if ($this->message !== null) {
+            $array['message'] = $this->message;
+        }
+        if ($this->data !== null) {
+            $array['data'] = $this->data;
+        }
+
+        return $array;
+    }
+
     function toJson() {
         $array = [];
 
