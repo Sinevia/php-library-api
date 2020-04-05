@@ -1,0 +1,4 @@
+tasks:
+  - init: echo "Installing composer dependencies"
+    command: composer update
+image: gitpod/workspace-full

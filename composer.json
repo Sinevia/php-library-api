@@ -15,5 +15,13 @@
     ],
     "autoload": {
         "files": ["src/ApiResponse.php","src/ApiService.php"]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "test": "vendor\/bin\/phpunit"
     }
 }
